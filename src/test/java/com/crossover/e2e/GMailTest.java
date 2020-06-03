@@ -56,6 +56,7 @@ public class GMailTest extends TestCase {
         
         // emailSubject and emailbody to be used in this unit test.
         String emailSubject = properties.getProperty("email.subject");
+        driver.findElement(By.xpath("//*[@id=\":98\"]")).clear();
         String emailBody = properties.getProperty("email.body"); 
         
     }
