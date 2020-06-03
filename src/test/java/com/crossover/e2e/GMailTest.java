@@ -45,9 +45,9 @@ public class GMailTest extends TestCase {
         passwordElement.sendKeys(properties.getProperty("password"));
         driver.findElement(By.id("passwordNext")).click();
 
-        Thread.sleep(1000);
+        Thread.sleep(10000);
 
-        WebElement composeElement = driver.findElement(By.xpath("//*[@role='button' and (.)='COMPSE']"));
+        WebElement composeElement = driver.findElement(By.xpath("//*[@id=\":3o\"]/div/div"));
         composeElement.click();
 
         driver.findElement(By.name("to")).clear();
